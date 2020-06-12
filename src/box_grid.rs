@@ -123,7 +123,7 @@ mod tests{
 
         assert_eq!(occupancy_result, false);
         assert_eq!(occupancy_result_2, true);
-        assert_eq!(box_grid.columns.len(), usize::from(width));
+        assert_eq!(box_grid.columns.len(), usize::from(width - 1));
         
     }
 }
