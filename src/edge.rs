@@ -311,18 +311,18 @@ mod tests{
         let participating_edges = edge.get_participating_edges(BoxSide::Positive);
              
          // TODO make sure the vec contains the 3 edges we want
-         let expectedEdge1 = Edge{start: Point{x: 1, y:2}, end:Point{x:2, y:2}};
-         let expectedEdge2 = Edge{start: Point{x: 1, y:1}, end:Point{x:1, y:2}};
-         let expectedEdge3 = Edge{start: Point{x: 2, y:1}, end:Point{x:2, y:2}};
+         let expected_edge_1 = Edge{start: Point{x: 1, y:2}, end:Point{x:2, y:2}};
+         let expected_edge_2 = Edge{start: Point{x: 1, y:1}, end:Point{x:1, y:2}};
+         let expected_edge_3 = Edge{start: Point{x: 2, y:1}, end:Point{x:2, y:2}};
          
  
-         let is_contained = does_contain(&participating_edges, &expectedEdge1);
+         let is_contained = does_contain(&participating_edges, &expected_edge_1);
          assert_eq!(is_contained, true);
  
-         let is_contained = does_contain(&participating_edges, &expectedEdge2);
+         let is_contained = does_contain(&participating_edges, &expected_edge_2);
          assert_eq!(is_contained, true);
  
-         let is_contained = does_contain(&participating_edges, &expectedEdge3);
+         let is_contained = does_contain(&participating_edges, &expected_edge_3);
          assert_eq!(is_contained, true);
     }
 
@@ -339,18 +339,18 @@ mod tests{
         let participating_edges = edge.get_participating_edges(BoxSide::Negative);
              
          // TODO make sure the vec contains the 3 edges we want
-         let expectedEdge1 = Edge{start: Point{x: 1, y:0}, end:Point{x:2, y:0}};
-         let expectedEdge2 = Edge{start: Point{x: 1, y:1}, end:Point{x:1, y:0}};
-         let expectedEdge3 = Edge{start: Point{x: 2, y:1}, end:Point{x:2, y:0}};
+         let expected_edge_1 = Edge{start: Point{x: 1, y:0}, end:Point{x:2, y:0}};
+         let expected_edge_2 = Edge{start: Point{x: 1, y:1}, end:Point{x:1, y:0}};
+         let expected_edge_3 = Edge{start: Point{x: 2, y:1}, end:Point{x:2, y:0}};
          
  
-         let is_contained = does_contain(&participating_edges, &expectedEdge1);
+         let is_contained = does_contain(&participating_edges, &expected_edge_1);
          assert_eq!(is_contained, true);
  
-         let is_contained = does_contain(&participating_edges, &expectedEdge2);
+         let is_contained = does_contain(&participating_edges, &expected_edge_2);
          assert_eq!(is_contained, true);
  
-         let is_contained = does_contain(&participating_edges, &expectedEdge3);
+         let is_contained = does_contain(&participating_edges, &expected_edge_3);
          assert_eq!(is_contained, true);
     }
 
