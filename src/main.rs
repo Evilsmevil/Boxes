@@ -21,6 +21,8 @@ fn main()
     for edge in participating_edges_positive {
         println!("{:?}", edge);
     }
+
+    // game is super simple - just play an edge before you play another
 }
 
 
